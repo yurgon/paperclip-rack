@@ -1,7 +1,7 @@
 module Paperclip
   module Rack
     class FileAdapter < ::Paperclip::AbstractAdapter
-      def initialize(target, hash_digest)
+      def initialize(target)
         @target = target[:tempfile]
         cache_current_values(target)
       end
